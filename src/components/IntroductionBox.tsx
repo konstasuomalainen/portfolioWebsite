@@ -1,3 +1,7 @@
+import profilePicture from "../assets/2234.jpg";
+import linkedinIcon from "../assets/iconmonstrlinkedin3.svg";
+import githubIcon from "../assets/iconmonstrgithub1.svg";
+
 import { useState } from "react";
 
 const IntroductionBox = () => {
@@ -20,7 +24,7 @@ const IntroductionBox = () => {
               <img
                 className="photo"
                 onClick={enlargeImg}
-                src="src\assets\2234.jpg"
+                src={profilePicture}
                 alt=""
               />
             </div>
@@ -44,22 +48,14 @@ const IntroductionBox = () => {
             target="_blank"
             href="https://www.linkedin.com/in/konsta-suomalainen-0961a7263/"
           >
-            <img
-              className="svg"
-              src="src/assets/iconmonstr-linkedin-3.svg"
-              alt=""
-            />
+            <img className="svg" src={linkedinIcon} alt="" />
           </a>
           <a
             className="socials"
             target="_blank"
             href="https://github.com/konstasuomalainen"
           >
-            <img
-              className="svg"
-              src="src/assets/iconmonstr-github-1.svg"
-              alt=""
-            />
+            <img className="svg" src={githubIcon} alt="" />
           </a>
         </div>
       </div>
@@ -69,7 +65,7 @@ const IntroductionBox = () => {
           <div className="modal-content">
             <img
               className="enlarged-photo"
-              src="src\assets\2234.jpg"
+              src={profilePicture}
               alt="Enlarged Profile"
             />
           </div>
