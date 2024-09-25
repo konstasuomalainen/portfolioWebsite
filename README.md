@@ -8,7 +8,8 @@ This is a simple portfolio website built using **React**, **Vite**, and **TypeSc
 - **Error Page Handling**: Includes custom error page for handling broken links or unrecognized routes.
 - **Design in Figma**: All design and layout decisions were first prototyped in Figma before development.
 - **Clean Code**: Tried to make readable code with focus on clear naming and reusable components.
-
+- **Mobile-Friendly**: Made sure using CSS that website is usable using mobile devices.
+  
 ## Technologies
 
 - **React** for the component-based UI
