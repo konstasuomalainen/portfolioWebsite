@@ -149,15 +149,12 @@ body {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  ); /* Makes it responsive */
-  height: 100%; /* Adds spacing between cards */
-  margin-top: 30px; /* Space above the card container */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 100%;
+  margin-top: 30px;
   padding: 20px;
   gap: 5rem;
-  padding-bottom: 0; /* Padding inside the container */
+  padding-bottom: 0;
 }
 
 /*----------- Card Content ----------*/
@@ -168,18 +165,23 @@ body {
   border-radius: 25px;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s;
 }
 
+.message-card:hover {
+  transform: scale(1.1);
+}
 .card-photo-container {
   display: flex;
   justify-content: center;
   overflow: hidden;
 }
+
 .card-photo {
   width: 100%;
   height: 300px;
   border-radius: 25px;
-  object-fit: cover; /* Make the image fit inside the container while keeping its aspect ratio */
+  object-fit: cover;
   object-position: center;
 }
 
@@ -214,7 +216,9 @@ body {
 
   margin: 0;
 }
+
 /*----------- Enlarged photo ----------*/
+
 .enlarged-photo {
   width: 400px;
 
@@ -222,23 +226,14 @@ body {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: zoomIn 0.3s ease-in-out;
-}
-
-@keyframes zoomIn {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(1);
-  }
+  transform: scale(1.1);
 }
 
 @media (max-width: 1524px) {
   .card-container {
     display: flex;
     flex-direction: column;
-    grid-template-columns: 1; /* Stack cards vertically */
+    grid-template-columns: 1;
   }
   .message-card {
     min-height: 300px;
@@ -253,8 +248,7 @@ body {
   .card-photo {
     height: 100px;
     border-radius: 25px;
-    object-fit: cover; /* Make the image fit inside the container while keeping its aspect ratio */
-    object-position: center;
+    object-fit: cover;
   }
   .introduction-container {
     overflow: hidden;
@@ -263,4 +257,29 @@ body {
   .card-description-text {
     margin-bottom: 30px;
   }
+}
+
+/*----------- Error Page ----------*/
+
+.error-page-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.error-container {
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.back-home-button {
+  color: rgb(0, 0, 0);
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
