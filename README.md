@@ -17,10 +17,15 @@ This is a simple portfolio website built using **React**, **Vite**, and **TypeSc
 
 ## Setup
 
+You can access my site via this url:
+
+https://portfoliowebsite-3c2c8.web.app/
+
 To run the project locally:
 
 1. Clone the repository
 2. Install dependencies using `npm install`
 3. Start the development server with `npm run dev`
+
 
 Feel free to explore the projects and provide feedback!
