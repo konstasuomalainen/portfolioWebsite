@@ -17,7 +17,8 @@ const MessasingAppCard = () => {
         <div className="card-title">
           <p className="card-title-text">Chat Messaging App</p>
           <p className="card-title-text-info">
-            Passion/Learning Project (in progress)
+            Passion/Learning Project (in progress) ·{" "}
+            <span className="card-year">2024</span>
           </p>
         </div>
         <div className="card-description">

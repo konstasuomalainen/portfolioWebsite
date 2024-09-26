@@ -20,7 +20,9 @@ const FirstWebsiteCard = () => {
         <div className="card-content">
           <div className="card-title">
             <p className="card-title-text">First Website</p>
-            <p className="card-title-text-info">Angular Project</p>
+            <p className="card-title-text-info">
+              Angular Project · <span className="card-year">2023</span>
+            </p>
           </div>
           <div className="card-description">
             <p className="card-description-text">

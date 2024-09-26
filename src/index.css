@@ -203,7 +203,10 @@ body {
 }
 
 /*----------- Card Text ----------*/
-
+.card-year {
+  font-size: 0.9rem;
+  color: #666;
+}
 .card-title-text {
   font-size: 16px;
   font-weight: 600;
@@ -304,11 +307,7 @@ body {
   background-color: black;
   z-index: 1;
 }
-@media (max-width: 1524px) {
-  .header {
-    opacity: 0;
-  }
-}
+
 nav {
   width: 100%;
   z-index: 1;
@@ -360,9 +359,9 @@ nav .logo-container-support:hover {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: white; /* White background */
+  background-color: white;
   z-index: 1000;
-  color: black; /* Black text color */
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,38 +380,44 @@ nav .logo-container-support:hover {
 }
 .name-intro {
   animation: fade-in-name 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-  font-size: 48px;
+  font-size: 3em;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 @keyframes fade-in-name {
   0% {
     opacity: 0;
-    transform: translateY(50px); /* Start slightly lower */
+    transform: translateY(50px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* End at original position */
+    transform: translateY(0);
   }
 }
 
-/* Fade-out animation for the loading screen */
 @keyframes fade-out {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    visibility: hidden; /* Ensures the element is no longer interactive */
+    visibility: hidden;
   }
 }
 
-/* Fade-in animation for the website content */
 @keyframes fade-in-content {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+@media (max-width: 1524px) {
+  .header {
+    opacity: 0;
+  }
+  .name-intro {
+    font-size: 2em;
   }
 }

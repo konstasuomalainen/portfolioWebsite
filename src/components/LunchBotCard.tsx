@@ -22,13 +22,14 @@ const LunchBotCard = () => {
           <div className="card-title">
             <p className="card-title-text">LunchBot</p>
             <p className="card-title-text-info">
-              Python Lunch Menu-Bot for Local IT-firm
+              Python Automation Script for Local IT-firm ·{" "}
+              <span className="card-year">2023</span>
             </p>
           </div>
           <div className="card-description">
             <p className="card-description-text">
-              Python WebScraping · Slack Integration · Kanban · Project Management
-              · Planning
+              Python WebScraping · Slack Integration · Kanban · Project
+              Management · Planning
             </p>
           </div>
         </div>

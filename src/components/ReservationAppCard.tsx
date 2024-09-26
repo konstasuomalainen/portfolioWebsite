@@ -22,7 +22,8 @@ const ReservationAppCard = () => {
           <div className="card-title">
             <p className="card-title-text">Room ReservationApp</p>
             <p className="card-title-text-info">
-              LAB University of Applied Sciences · Internship
+              LAB University of Applied Sciences · Internship ·{" "}
+              <span className="card-year">2024</span>
             </p>
           </div>
           <div className="card-description">
