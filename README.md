@@ -5,6 +5,7 @@ This is a simple portfolio website built using **React**, **Vite**, and **TypeSc
 ## Features
 
 - **Project Showcase**: Displays a list of my projects with descriptions and links to explore further.
+- **Interactive elements**: CV, Photo, Icons and Cards.
 - **Error Page Handling**: Includes custom error page for handling broken links or unrecognized routes.
 - **Design in Figma**: All design and layout decisions were first prototyped in Figma before development.
 - **Clean Code**: Tried to make readable code with focus on clear naming and reusable components.
