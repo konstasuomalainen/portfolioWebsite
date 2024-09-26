@@ -6,6 +6,7 @@ body {
   padding: 0;
   text-align: center;
   overflow: hidden;
+  background-color: black;
 }
 .linebreak {
   color: rgb(107, 107, 107);
@@ -21,17 +22,24 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.background-video {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+}
 .box-container {
   width: 55%;
   height: 100%;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  z-index: 1;
+  opacity: 0;
+  animation: fade-in-content 1s ease-in 1.75s forwards;
 }
 
 .introduction-container {
-  margin-top: 96px;
   text-align: start;
   border: solid 1px rgb(107, 107, 107);
   border-radius: 15px;
@@ -220,7 +228,7 @@ body {
 /*----------- Enlarged photo ----------*/
 
 .enlarged-photo {
-  width: 400px;
+  width: 500px;
 
   max-width: 600px;
   height: auto;
@@ -282,4 +290,129 @@ body {
   width: 30%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*----------- NAV ----------*/
+.header {
+  width: 55%;
+  height: 8.5vh;
+  border: 0.5px solid black;
+  border-left: 0;
+  border-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  z-index: 1;
+}
+@media (max-width: 1524px) {
+  .header {
+    opacity: 0;
+  }
+}
+nav {
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  height: 8.5vh;
+  border-left: 0.5px solid black;
+  border-right: 0.5px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+nav .logo-container {
+  margin: 15px;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  text-align: start;
+  z-index: 1;
+  opacity: 0;
+  animation: fade-in-content 3s ease-in 1.75s forwards;
+}
+
+nav .logo-container-product-button,
+.logo-container-learn,
+.logo-container-safety-button,
+.logo-container-support,
+.logo-container-download {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-right: -25px;
+}
+
+nav .logo-container-learn:hover {
+  background-color: rgb(99, 99, 99);
+  cursor: pointer;
+}
+nav .logo-container-support:hover {
+  background-color: rgb(99, 99, 99);
+  cursor: pointer;
+}
+
+/*----------- NAV ----------*/
+.loadingScreen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* White background */
+  z-index: 1000;
+  color: black; /* Black text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  z-index: 1000;
+  animation: fade-out 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 1.25s;
+}
+.loadingVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.name-intro {
+  animation: fade-in-name 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+@keyframes fade-in-name {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Start slightly lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Fade-out animation for the loading screen */
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden; /* Ensures the element is no longer interactive */
+  }
+}
+
+/* Fade-in animation for the website content */
+@keyframes fade-in-content {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
