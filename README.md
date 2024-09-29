@@ -1,6 +1,7 @@
 # Portfolio Website
 
 This is a simple portfolio website built using **React**, **Vite**, and **TypeScript**. The site showcases my personal projects with links to their respective repositories or live demos.
+![Screenshot 2024-09-29 at 14-21-05 Konsta Suomalainen](https://github.com/user-attachments/assets/fb882226-6b22-4204-a889-b964efc69ec9)
 
 ## Features
 
