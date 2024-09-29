@@ -22,7 +22,9 @@ const MessasingAppCard = () => {
           </p>
         </div>
         <div className="card-description">
-          <p className="card-description-text">React · TypeScript · MongoDB</p>
+          <p className="card-description-text">
+            React · TypeScript · MongoDB · User Authentication
+          </p>
         </div>
       </div>
     </div>

@@ -236,26 +236,31 @@ body {
   transform: scale(1.1);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1324px) {
   .card-container {
     display: flex;
     flex-direction: column;
     grid-template-columns: 1;
+    height: auto;
+    padding: 10px 10px 0;
+    gap: 1em;
   }
+
   .message-card {
-    min-height: 300px;
-    height: 100%;
-    margin-top: -30px;
-    gap: 2px;
+    min-height: 150px;
+    height: 20em;
+    max-height: 350px;
+    margin-top: 10px;
+
+    padding: 0;
   }
   .container {
     overflow: scroll;
     height: calc(100vh - 20px);
   }
   .card-photo {
-    height: 100px;
-    border-radius: 25px;
     object-fit: cover;
+    height: auto;
   }
   .introduction-container {
     overflow: hidden;
@@ -263,6 +268,10 @@ body {
 
   .card-description-text {
     margin-bottom: 30px;
+  }
+
+  .card-photo-container {
+    padding: 0;
   }
 }
 
@@ -322,13 +331,20 @@ nav .logo-container {
   width: 35%;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   text-align: start;
   z-index: 1;
   opacity: 0;
   animation: fade-in-content 3s ease-in 1.75s forwards;
 }
-
+.logo-container-learn {
+  display: flex;
+  justify-content: center;
+}
+.logo-container-support {
+  display: flex;
+  justify-content: center;
+}
 nav .logo-container-product-button,
 .logo-container-learn,
 .logo-container-safety-button,
@@ -344,11 +360,11 @@ nav .logo-container-product-button,
 }
 
 nav .logo-container-learn:hover {
-  background-color: rgb(99, 99, 99);
+  background-color: rgb(70, 70, 70);
   cursor: pointer;
 }
 nav .logo-container-support:hover {
-  background-color: rgb(99, 99, 99);
+  background-color: rgb(70, 70, 70);
   cursor: pointer;
 }
 
