@@ -3,6 +3,7 @@ import LunchBotCard from "../components/LunchBotCard";
 import MessasingAppCard from "../components/MessasingAppCard";
 import FirstWebsiteCard from "../components/FirstWebsiteCard";
 import ReservationAppCard from "../components/ReservationAppCard";
+import LPRDataCard from "../components/LPRDataCard";
 import Nav from "../components/Nav";
 import backgroundVideo from "../assets/backgroundvideo.mp4";
 import "../index.css";
@@ -11,7 +12,7 @@ const FrontPage = () => {
   return (
     <>
       <div className="loadingScreen">
-        <video className="loadingVideo" autoPlay muted loop>
+        <video preload="auto" className="loadingVideo" autoPlay muted loop>
           <source src={backgroundVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -19,7 +20,7 @@ const FrontPage = () => {
       </div>
       <Nav></Nav>
       <div className="container">
-        <video className="loadingVideo" autoPlay muted loop>
+        <video className="loadingVideo" preload="auto" autoPlay muted loop>
           <source src={backgroundVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -32,11 +33,13 @@ const FrontPage = () => {
             <hr className="linebreak" />
           </div>
           <div className="card-container">
+            <LPRDataCard></LPRDataCard>
             <MessasingAppCard></MessasingAppCard>
             <ReservationAppCard></ReservationAppCard>
             <LunchBotCard></LunchBotCard>
             <FirstWebsiteCard></FirstWebsiteCard>
           </div>
+          <footer></footer>
         </section>
       </div>
     </>
