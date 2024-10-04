@@ -12,7 +12,7 @@ const FrontPage = () => {
   return (
     <>
       <div className="loadingScreen">
-        <video preload="auto" className="loadingVideo" autoPlay muted loop>
+        <video preload="auto" className="loadingVideo1" autoPlay muted loop>
           <source src={backgroundVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
