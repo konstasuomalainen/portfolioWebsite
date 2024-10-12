@@ -15,9 +15,7 @@ const LPRDataCard = () => {
         </div>
         <div className="card-content">
           <div className="card-title">
-            <p className="card-title-text">
-              Lappeenranta City Purchasing Receipts Viewer
-            </p>
+            <p className="card-title-text">LPR Purchasing Receipts Viewer</p>
             <p className="card-title-text-info">
               React + Python · <span className="card-year">2024</span>
             </p>

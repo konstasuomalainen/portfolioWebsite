@@ -22,7 +22,7 @@ const LunchBotCard = () => {
           <div className="card-title">
             <p className="card-title-text">LunchBot</p>
             <p className="card-title-text-info">
-              Python Automation Script for Local IT-firm ·{" "}
+              Python Script for Local IT-firm ·{" "}
               <span className="card-year">2023</span>
             </p>
           </div>
