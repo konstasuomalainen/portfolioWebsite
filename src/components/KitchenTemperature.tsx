@@ -1,6 +1,6 @@
-import LPRDataPhoto from "../assets/LPRDataPhoto.jpg";
+import KitchenPhoto from "../assets/giphy4.webp";
 
-const LPRDataCard = () => {
+const KitchenTemperature = () => {
   return (
     <>
       <div className="message-card">
@@ -10,19 +10,19 @@ const LPRDataCard = () => {
             href="https://frontendforlprdata.web.app/"
             target="_blank"
           >
-            <img className="card-photo" src={LPRDataPhoto} alt="messagePhoto" />
+            <img className="card-photo" src={KitchenPhoto} alt="KitchenPhoto" />
           </a>
         </div>
         <div className="card-content">
           <div className="card-title">
-            <p className="card-title-text">LPR Purchasing Receipts Viewer</p>
+            <p className="card-title-text">App for Tracking Kitchen Temps</p>
             <p className="card-title-text-info">
-              Learning Project · <span className="card-year">2024</span>
+              Role: Front-End · <span className="card-year">Ongoing</span>
             </p>
           </div>
           <div className="card-description">
             <p className="card-description-text">
-              API · React · Front-End · TypeScript · Python · Back-End
+              Full-Stack · Angular · SQL Server · Azure · Jira · C#
             </p>
           </div>
         </div>
@@ -31,4 +31,4 @@ const LPRDataCard = () => {
   );
 };
 
-export default LPRDataCard;
+export default KitchenTemperature;

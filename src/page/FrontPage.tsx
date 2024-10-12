@@ -11,6 +11,7 @@ import "../index.css";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useFollowPointer } from "./use-follow-pointer";
+import KitchenTemperature from "../components/KitchenTemperature";
 
 const FrontPage = () => {
   const ref = useRef(null);
@@ -39,8 +40,8 @@ const FrontPage = () => {
             <hr className="linebreak" />
           </div>
           <div className="card-container">
+            <KitchenTemperature></KitchenTemperature>
             <LPRDataCard></LPRDataCard>
-
             <MessasingAppCard></MessasingAppCard>
             <ReservationAppCard></ReservationAppCard>
             <LunchBotCard></LunchBotCard>
